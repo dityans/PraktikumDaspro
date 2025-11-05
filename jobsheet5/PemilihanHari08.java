@@ -28,5 +28,6 @@ public class PemilihanHari08 {
                 break;
         }
     System.out.println(dayName + " is a " + dayType);
+    sc.close();
     }
 }

@@ -18,7 +18,8 @@ public class CetakKRS08 {
           //  System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
         //}
         String hasil;
-        hasil = (uktLunas) ? "Pembayaran UKT terverivikasi\nSilahkan cetak KRS dan minta tanda tangan DPA" : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
+        hasil = (uktLunas) ? "Pembayaran UKT terverivikasi\nSilahkan cetak KRS dan minta tanda tangan DPA" : 
+        "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
         System.out.println(hasil);
 
         sc.close();

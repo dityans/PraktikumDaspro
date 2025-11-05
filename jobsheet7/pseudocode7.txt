@@ -1,0 +1,34 @@
+Tugas a
+Deklarasi:
+    int n=0;
+    String jenisKelamin, nama;
+Algoritma:
+    While (n<30){
+        print "Masukan nama anda: "
+        input nama;
+        print "Masukan jenis kelamin anda: "
+        input jenisKelamin;
+        if (jenisKelamin.equals(perempuan)){
+            print nama;
+        }
+        n++;
+    }
+    
+Tugas b
+Deklarasi: 
+    Int bilangan;
+Algoritma:
+    for (bilangan=25;bilangan>0;bilangan--)
+        print "bilangan";
+
+Tugas c
+Deklarasi:
+    Int bilangan=0;
+Algoritma:
+    While(bilangan<50){
+        if (bilangan%3==0){
+        continue;
+        }
+    print "bilangan";
+    bilangan++;
+    }
