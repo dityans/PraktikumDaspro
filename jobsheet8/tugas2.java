@@ -3,19 +3,18 @@ public class tugas2 {
         int i, j,n;
         for (i = 1; i<=5; i++) {
             System.out.print("n = " + i + " -> jumlah kuadrat = ");
-            int k = 0;
+            int total = 0;
             for (j = 1; j <= i; j++) {
                 n = (j*j);
-                k += n;
+                total += n;
                 System.out.print(n);
 
                 if (j<i){
                 System.out.print( " + ");
                 }
             }
-            if (k != 1) {
-                System.out.print(" = " + k);
-                System.out.println();
+            if (total != 1) {
+                System.out.println(" = " + total);
             }
             else {
                 System.out.println();
