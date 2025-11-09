@@ -3,10 +3,10 @@ public class NilaiKelompok07 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         double nilai, totalNilai, rataNilai;
-        int i = 1, j;
+        int i, j;
         double tertinggi = 0;
         int kelompok = 0;  
-        while (i<=6) {
+        for (i = 1; i<=6; i++) {
             System.out.println("Kelompok " + i);
             totalNilai = 0;
             for (j = 1;j<=5;j++) {
@@ -20,7 +20,6 @@ public class NilaiKelompok07 {
                 kelompok = i;
             }
             System.out.println("Rata-rata: "+ rataNilai);
-            i++; 
         }
         System.out.println("Kelompok dengan nilai rata-rata tertinggi adalah Kelompok " + kelompok);
         System.out.println("Nilai rata-rata tertinggi: " + tertinggi);
