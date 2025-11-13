@@ -9,6 +9,7 @@ public class ArrayNilai07 {
             nilai[i] = sc.nextInt();
         }
         for (int i = 0; i < nilai.length; i++) {
+            if (nilai[i] > 70) 
             System.out.println("Nilai akhir ke-" + i + " adalah: " + nilai[i]);
         }
         sc.close();
