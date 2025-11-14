@@ -18,6 +18,12 @@ public class SearchNilai07 {
             if (arrNilai[i] == key) {
                 hasil = i+1;
                 break;
+            }else if (i == arrNilai.length - 1) {
+                System.out.println();
+                System.out.println("Nilai " + key + " tidak ditemukan");
+                System.out.println();
+                sc.close();
+                return;
             }
         }
         System.out.println();
