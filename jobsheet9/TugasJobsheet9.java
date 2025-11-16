@@ -14,7 +14,6 @@ public class TugasJobsheet9 {
                 break;
             }
             String[] daftarPesanan = new String[menu.length];
-            int jmlItem;
             for (int i = 0; i < jmlMenu; i++) {
                 sc.nextLine();
                 System.out.print("Masukan menu ke-" + (i+1) + ": ");
@@ -23,7 +22,7 @@ public class TugasJobsheet9 {
                     if (pesanan.equalsIgnoreCase(menu[j])) {
                         daftarPesanan[j] = pesanan;
                         System.out.print("Masukan jumlah item: ");
-                        jmlItem = sc.nextInt();
+                        int jmlItem = sc.nextInt();
                         totalPembayaran += daftarHarga[j] * jmlItem;
                         break;
                     } else if (j == menu.length - 1) {
