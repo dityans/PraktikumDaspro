@@ -14,7 +14,7 @@ public class TugasJobsheet9 {
                 break;
             }
             String[] daftarPesanan = new String[menu.length];
-            int jmlItem = 0;
+            int jmlItem;
             for (int i = 0; i < jmlMenu; i++) {
                 sc.nextLine();
                 System.out.print("Masukan menu ke-" + (i+1) + ": ");
