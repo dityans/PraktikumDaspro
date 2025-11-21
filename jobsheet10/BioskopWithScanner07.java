@@ -14,12 +14,21 @@ public class BioskopWithScanner07 {
             switch (choice) {
             case 1:
                 while (true) {
+                    sc.nextLine();
                     System.out.print("Masukkan nama: ");
                     String nama = sc.nextLine();
                     System.out.print("Masukkan baris: ");
                     int baris = sc.nextInt();
+                    if (baris < 1 || baris > penonton.length) {
+                        System.out.println("Baris tidak tersedia. Silakan coba lagi.");
+                        continue;
+                    }
                     System. out.print("Masukkan kolom: ");
                     int kolom = sc.nextInt();
+                    if (kolom < 1 || kolom > penonton[0].length) {
+                        System.out.println("Kolom tidak tersedia. Silakan coba lagi.");
+                        continue;
+                    }
                     sc.nextLine();
 
                     penonton[baris-1][kolom-1] = nama;
