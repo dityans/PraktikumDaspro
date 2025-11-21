@@ -21,8 +21,7 @@ public class SIAKAD07 {
             for (int i = 0; i < nilai.length; i++) {
                 totalPerMataKuliah += nilai[i][j];
             }
-            double rataRata = totalPerMataKuliah / nilai.length;
-            System.out.printf("Mata Kuliah %d: %.2f%n", (j+1), rataRata);
+            System.out.println("Mata Kuliah " + (j+1) + ": " + totalPerMataKuliah / 4);
         }
     }
 }
