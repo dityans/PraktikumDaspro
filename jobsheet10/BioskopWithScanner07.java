@@ -28,6 +28,9 @@ public class BioskopWithScanner07 {
                     if (kolom < 1 || kolom > penonton[0].length) {
                         System.out.println("Kolom tidak tersedia. Silakan coba lagi.");
                         continue;
+                    } if (penonton[baris-1][kolom-1] != null) {
+                        System.out.println("Kursi sudah terisi. Silakan pilih kursi lain.");
+                        continue;
                     }
                     sc.nextLine();
 
