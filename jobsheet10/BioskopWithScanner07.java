@@ -47,7 +47,7 @@ public class BioskopWithScanner07 {
                 System.out.println("--Daftar Penonton--");
                 for (int i = 0; i < penonton.length; i++) {
                     for (int j = 0; j < penonton[i].length; j++) {
-                        System.out.printf("%s \t", penonton[i][j]);
+                        System.out.printf("%s \t", penonton[i][j] != null ? penonton[i][j] : "***");
                     }
                     System.out.println();
                 }
