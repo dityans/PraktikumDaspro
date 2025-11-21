@@ -2,8 +2,12 @@ package jobsheet10;
 import java.util.Scanner;
 public class SIAKAD07 {
     public static void main(String[] args) {
-        int[][] nilai = new int[4][3];
         Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMahasiswa = sc.nextInt();
+        System.out.print("Masukkan jumlah mata kuliah: ");
+        int jumlahMataKuliah = sc.nextInt();
+        int nilai [][] = new int[jumlahMahasiswa][jumlahMataKuliah];
         for (int i = 0; i < nilai.length; i++) {
             System.out.println("Input nilai mahasiswa ke-" + (i+1));
             double totalPerSiswa = 0;
