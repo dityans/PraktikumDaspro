@@ -5,14 +5,20 @@ public class kafe07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Menu("Andi", true, "DISKON30");
-        System.out.print("Masukan nomor menu yang dipesan: ");
-        int pilihanMenu = sc.nextInt();
-        System.out.print("Masukan banyak item yang dipesan: ");
-        int banyakItem = sc.nextInt();
+        System.out.print("Masukan jumlah menu yang Anda pesan: ");
+        int jumlahPesanan = sc.nextInt();
         System.out.print("Masukan kode promo (jika tidak ada, ketik 'NOPROMO'): ");
         String kodePromo = sc.next();
+        int totalHarga = 0;
+        for (int i = 1; i <= jumlahPesanan; i++) {
+            System.out.println("Pesanan ke-" + i);
+            System.out.print("Masukan nomor menu yang dipesan: ");
+            int pilihanMenu = sc.nextInt();
+            System.out.print("Masukan banyak item yang dipesan: ");
+            int banyakItem = sc.nextInt();
+            totalHarga += hitungTotalHarga07(pilihanMenu, banyakItem, kodePromo);
+        }
 
-        int totalHarga = hitungTotalHarga07(pilihanMenu, banyakItem, kodePromo);
         System.out.println("Total harga yang harus dibayar: Rp " + totalHarga);
         sc.close();
     }
